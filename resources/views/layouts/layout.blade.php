@@ -31,12 +31,12 @@
             <!--Acaba el contenido de la pagina-->
           </div>
         </div>
-        <footer class="footer">
-          <img class="rounded-bottom" src="{{asset('assets/images/pie.png')}}" width="100%" data-holder-rendered="true" alt="Imagen banner1">
-        </footer>
-
       </div>
+      <footer class="footer">
+        <img class="rounded-bottom" src="{{asset('assets/images/pie.png')}}" width="100%" data-holder-rendered="true" alt="Imagen banner1">
+      </footer>
     </div>
+
   </div>
     <!-- JavaScript -->
     <script src="{{ asset("js/jquery-3.3.1.min.js") }}"></script>
