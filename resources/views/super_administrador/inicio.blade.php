@@ -48,7 +48,7 @@
                 <input type="text" class="form-control" id="fecha_fin" disabled style="background-color: white">
               </div>
               <br>
-              <button type="button" onclick="guardar_periodo()"class="btn btn-primary btn-block">Guardar</button>
+              <button type="button" onclick="guardar_periodo()" class="btn btn-primary btn-block" id="guardar_btn">Guardar</button>
             </form>
 
           </div>
@@ -68,6 +68,8 @@
 
   </div>
 </div>
+
+<div class="" id="salida_periodo"></div>
 
 @endsection
 @section('js')
