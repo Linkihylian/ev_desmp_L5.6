@@ -7,6 +7,8 @@
     <title>Evaluacion Desempeño | @yield('title')</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset("css/bootstrap.min.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{asset('fontawesome/css/all.css')}}" media="screen" />
+
     @yield('css')
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
