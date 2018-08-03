@@ -7,7 +7,6 @@
     <title>Evaluacion Desempeño | @yield('title')</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset("css/bootstrap.min.css") }}">
-    <link rel="stylesheet" type="text/css" href="{{asset('fontawesome/css/all.css')}}" media="screen" />
     @yield('css')
   </head>
   <body background="{{asset('assets/images/fondo_azul1024.png')}}">
@@ -21,6 +20,10 @@
               <div class="row mb-4">
                 <div class="col-md-4 offset-md-4">
                   <h2 align="center" style="color:#1960A4;">@yield('titulo')</h2>
+
+
+
+
 
                 </div>
               </div>
@@ -40,6 +43,7 @@
 
   </div>
     <!-- JavaScript -->
+    <script type="text/javascript">base_url = "{{ url("/") }}"; </script>
     <script src="{{ asset("js/jquery-3.3.1.min.js") }}"></script>
     <script src="{{ asset("js/popper.min.js") }}"></script>
     <script src="{{ asset("js/bootstrap.min.js") }}"></script>
