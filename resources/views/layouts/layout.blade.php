@@ -39,6 +39,7 @@
 
   </div>
     <!-- JavaScript -->
+    <script type="text/javascript">base_url = "{{ url("/") }}"; </script>
     <script src="{{ asset("js/jquery-3.3.1.min.js") }}"></script>
     <script src="{{ asset("js/popper.min.js") }}"></script>
     <script src="{{ asset("js/bootstrap.min.js") }}"></script>
