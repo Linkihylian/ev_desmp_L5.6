@@ -12,3 +12,14 @@
 */
 
 Route::get('/', 'UserController@index');
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Super administrador
+|--------------------------------------------------------------------------
+|
+*/
+
+Route::get('/super_administrador', 'Super_administrador@index');
