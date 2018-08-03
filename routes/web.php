@@ -23,3 +23,4 @@ Route::get('/', 'UserController@index');
 */
 
 Route::get('/super_administrador', 'Super_administrador@index');
+Route::post('/super_administrador/guardar_periodo', 'Super_administrador@guardar_periodo');

@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset("css/bootstrap.min.css") }}">
     @yield('css')
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
   </head>
   <body background="{{asset('assets/images/fondo_azul1024.png')}}">
     <div class="container ">
@@ -20,10 +22,6 @@
               <div class="row mb-4">
                 <div class="col-md-4 offset-md-4">
                   <h2 align="center" style="color:#1960A4;">@yield('titulo')</h2>
-
-
-
-
 
                 </div>
               </div>
