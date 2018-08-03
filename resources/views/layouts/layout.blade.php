@@ -12,8 +12,8 @@
   <body background="{{asset('assets/images/fondo_azul1024.png')}}">
     <div class="container ">
       <div class="row mt-3 mb-3">
-        <div class="col-md-12 offset-lm-1 rounded-top" style="background:url({{asset('assets/images/fondo_blanco.png')}})">
-          <img width="100%" data-holder-rendered="true" class="img-responsive" src="{{asset('assets/images/cabecera3.png')}}" alt="Imagen banner1">
+        <div class="rounded-top" style="background:url({{asset('assets/images/fondo_blanco.png')}})">
+          <img width="100%" data-holder-rendered="true" class="img-responsive mt-3 mb-3" src="{{asset('assets/images/cabecera3.png')}}" alt="Imagen banner1">
           @yield('nav')
           <div class="panel panel-default">
             <div class="container mb-5 mt-2">
