@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="{{asset('assets/images/ico.png')}}">
     <title>Evaluacion Desempeño | @yield('title')</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset("css/bootstrap.min.css") }}">
     @yield('css')
   </head>
-  <body>
-
+  <body background="{{asset('assets/images/fondo_azul1024.png')}}">
+    <div class="container ">
     <!--Empieza el contenido de la pagina-->
     <main role="main" class="container">
       @yield('contenido')
