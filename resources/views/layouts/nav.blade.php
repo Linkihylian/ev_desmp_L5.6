@@ -6,9 +6,15 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
+        @php
+          $a = 1
+        @endphp
+
         <li class="nav-item ">
-          <a class="nav-link" href="{{ url("/super_administrador") }}">Normas </a>
+          <a class="nav-link" href="{{ url("/inicio") }}">Normas</a>
         </li>
+
+        @if($a == 1) <!--Super Administrador-->
         <li class="nav-item dropdown active">
           <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Evaluación
@@ -28,8 +34,25 @@
           <a class="nav-link" href="#">Reportes</a>
         </li>
 
-
-
+      @elseif($a == 2) <!--Evaluador -->
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Evaluador
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="">Manual</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="#">Crear ODI </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Evaluar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Auditoria</a>
+        </li>
+      @endif
       </ul>
     </div>
   </nav>

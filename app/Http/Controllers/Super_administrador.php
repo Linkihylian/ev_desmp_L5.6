@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class super_administrador extends Controller{
     public function index(){
 
-        return view('/super_administrador/normas/inicio');
+        return view('/super_administrador');
     }
 
 

@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'LoginController@index');
+Route::get('/inicio', 'UserController@index');
 
 
 
