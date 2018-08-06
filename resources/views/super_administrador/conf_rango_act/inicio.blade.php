@@ -26,27 +26,32 @@
         <h5 class="card-title text-center pt-5" >Rangos de Actuación para el personal Administrativo, Técnico - Profesional y Supervisorio</h5>
 
         <div class="table-responsive card mt-5">
-          <table class="table table-hover" id="tabla_excp">
+          <table class="table table-hover" id="tabla_ra_empleado">
             <thead class="bg-secondary text-light">
               <tr>
                 <th scope="col">Inicio</th>
                 <th scope="col">Final</th>
                 <th scope="col">Rango de actuación</th>
                 <th scope="col">Descripción</th>
-                <th scope="col" style="width: 20px"><button type="button" name="button" class="btn btn-primary btn-block" onclick="modal_agregar_exc()"><i class="fas fa-plus"></i></button></th>
+                <th scope="col" style="width: 20px"><button type="button" name="button" class="btn btn-primary btn-block" onclick="modal_agregar_rang_act()"><i class="fas fa-plus"></i></button></th>
               </tr>
             </thead>
             <tbody>
               <tr data-id-excp="111">
                 <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+                <td>5</td>
+                <td>RAGO </td>
+                <td colspan="2"> Descripcion xddd</td>
               </tr>
 
             </tbody>
           </table>
         </div>
+
+        <div class="col-md-8 offset-md-2 col-sm-12 pt-5">
+          <button type="button" onclick="" class="btn btn-primary btn-block" id="listo_categoria">Listo</button>
+        </div>
+
 
       </div>
       <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -54,26 +59,30 @@
         <h5 class="card-title text-center pt-5" >Rango de Actuación del personal obrero</h5>
 
         <div class="table-responsive card mt-5">
-          <table class="table table-hover" id="tabla_excp">
+          <table class="table table-hover" id="tabla_ra_obrero">
             <thead class="bg-secondary text-light">
               <tr>
                 <th scope="col">Inicio</th>
                 <th scope="col">Final</th>
                 <th scope="col">Rango de actuación</th>
                 <th scope="col">Descripción</th>
-                <th scope="col" style="width: 20px"><button type="button" name="button" class="btn btn-primary btn-block" onclick="modal_agregar_exc()"><i class="fas fa-plus"></i></button></th>
+                <th scope="col" style="width: 20px"><button type="button" name="button" class="btn btn-primary btn-block" onclick="modal_agregar_rang_act_obrero()"><i class="fas fa-plus"></i></button></th>
               </tr>
             </thead>
             <tbody>
               <tr data-id-excp="111">
                 <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+                <td>7</td>
+                <td>Ra obrero</td>
+                <td colspan="2"> dewsc obrero </td>
               </tr>
 
             </tbody>
           </table>
+        </div>
+
+        <div class="col-md-8 offset-md-2 col-sm-12 pt-5">
+          <button type="button" onclick="" class="btn btn-primary btn-block" id="listo_categoria">Listo</button>
         </div>
 
       </div>
@@ -108,6 +117,10 @@
 
 @endsection
 @section('js')
+<script src="{{ asset("js/super_administrador/conf_rango_act/inicio.js") }}" charset="utf-8"></script>
+<script src="{{ asset("js/super_administrador/conf_rango_act/modal_agregar_rang_act.js") }}" charset="utf-8"></script>
+<script src="{{ asset("js/super_administrador/conf_rango_act/modal_editar_rang_act.js") }}" charset="utf-8"></script>
+<script src="{{ asset("js/super_administrador/conf_rango_act/modal_agregar_rang_act_obrero.js") }}" charset="utf-8"></script>
 <script type="text/javascript">
 
 

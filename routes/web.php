@@ -25,8 +25,9 @@ Route::get('/', 'LoginController@index');
 Route::get ('/super_administrador', 'Super_administrador@index');
 Route::get ('/super_administrador/configurar_evaluacion', 'Super_administrador@conf_ev');
 Route::post('/super_administrador/guardar_periodo', 'Super_administrador@guardar_periodo');
-Route::get('/super_administrador/configurar_excepcional', 'Super_administrador@configurar_excepcional');
-Route::get('/super_administrador/configurar_rango_actuacion', 'Super_administrador@configurar_rango_actuacion');
+Route::get ('/super_administrador/configurar_excepcional', 'Super_administrador@configurar_excepcional');
+Route::get ('/super_administrador/configurar_rango_actuacion', 'Super_administrador@configurar_rango_actuacion');
+Route::get ('/super_administrador/evaluaciones_realizadas', 'Super_administrador@evaluaciones_realizadas');
 
 
 /*

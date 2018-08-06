@@ -20,7 +20,7 @@
           </div>
         </li>
         <li class="nav-item ">
-          <a class="nav-link " href="#">Aprobar evaluación </a>
+          <a class="nav-link " href="{{ url("/super_administrador/evaluaciones_realizadas") }}">Evaluaciones realizadas </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Evaluar resagado</a>

@@ -29,4 +29,9 @@ class super_administrador extends Controller{
 
       return view('/super_administrador/conf_rango_act/inicio');
     }
+
+    public function evaluaciones_realizadas(){
+
+      return view('/super_administrador/ev_realizadas/inicio');
+    }
 }
