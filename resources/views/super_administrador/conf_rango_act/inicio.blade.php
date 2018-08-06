@@ -49,7 +49,34 @@
         </div>
 
       </div>
-      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">.55..</div>
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+        <h5 class="card-title text-center pt-5" >Rango de Actuación del personal obrero</h5>
+
+        <div class="table-responsive card mt-5">
+          <table class="table table-hover" id="tabla_excp">
+            <thead class="bg-secondary text-light">
+              <tr>
+                <th scope="col">Inicio</th>
+                <th scope="col">Final</th>
+                <th scope="col">Rango de actuación</th>
+                <th scope="col">Descripción</th>
+                <th scope="col" style="width: 20px"><button type="button" name="button" class="btn btn-primary btn-block" onclick="modal_agregar_exc()"><i class="fas fa-plus"></i></button></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-id-excp="111">
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
     </div>
 
 
