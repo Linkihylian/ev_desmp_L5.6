@@ -13,7 +13,7 @@
         </div>
 
 
-        
+
       {{ Form::open(array('url' => 'foo/bar')) }}
       <div class="form-group">
         {{ Form::text('usuario', null, array('placeholder' => 'Usuario', 'class' =>'text-center form-control mb-1', 'maxlength'=>'8', 'required'=> 'required')) }}
