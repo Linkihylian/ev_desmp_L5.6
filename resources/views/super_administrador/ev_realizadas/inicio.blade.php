@@ -88,7 +88,8 @@
 
 
 @endsection
-@section('js').
+@section('js')
+<script src="{{ asset("js/menu.js") }}" charset="utf-8"></script>
 <script src="{{ asset("js/datatables.min.js") }}" charset="utf-8"></script>
 <script src="{{ asset("js/selectize.min.js") }}" charset="utf-8"></script>
 <script src="{{ asset("js/super_administrador/ev_realizadas/inicio.js") }}" charset="utf-8"></script>

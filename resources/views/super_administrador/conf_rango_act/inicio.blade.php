@@ -117,6 +117,7 @@
 
 @endsection
 @section('js')
+<script src="{{ asset("js/menu.js") }}" charset="utf-8"></script>
 <script src="{{ asset("js/super_administrador/conf_rango_act/inicio.js") }}" charset="utf-8"></script>
 <script src="{{ asset("js/super_administrador/conf_rango_act/modal_agregar_rang_act.js") }}" charset="utf-8"></script>
 <script src="{{ asset("js/super_administrador/conf_rango_act/modal_editar_rang_act.js") }}" charset="utf-8"></script>

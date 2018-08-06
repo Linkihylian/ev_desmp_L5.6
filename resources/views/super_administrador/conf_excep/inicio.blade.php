@@ -55,6 +55,7 @@
 
 @endsection
 @section('js')
+<script src="{{ asset("js/menu.js") }}" charset="utf-8"></script>
 <script src="{{ asset("js/super_administrador/conf_excep/inicio.js") }}" charset="utf-8"></script>
 <script src="{{ asset("js/super_administrador/conf_excep/modal_agregar_exc.js") }}" charset="utf-8"></script>
 <script src="{{ asset("js/super_administrador/conf_excep/modal_editar_exc.js") }}" charset="utf-8"></script>
