@@ -14,8 +14,9 @@
             Evaluación
           </a>
           <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="{{ url("/super_administrador/configurar_evaluacion") }}">Configurar</a>
-            <a class="dropdown-item" href="{{ url("/super_administrador/configurar_excepcional") }}">Exposición de asignación del rango excepcional</a>
+            <a class="dropdown-item" href="{{ url("/super_administrador/configurar_rango_actuacion") }}">1. Rango de actuación</a>
+            <a class="dropdown-item" href="{{ url("/super_administrador/configurar_excepcional") }}">2. Exposición de asignación del rango excepcional</a>
+            <a class="dropdown-item" href="{{ url("/super_administrador/configurar_evaluacion") }}">3. Configurar</a>
           </div>
         </li>
         <li class="nav-item ">
@@ -26,6 +27,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Reportes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Auditoria</a>
         </li>
 
 

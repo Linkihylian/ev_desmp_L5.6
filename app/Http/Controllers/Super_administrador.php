@@ -24,4 +24,9 @@ class super_administrador extends Controller{
     public function configurar_excepcional(){
       return view('/super_administrador/conf_excep/inicio');
     }
+
+    public function configurar_rango_actuacion(){
+
+      return view('/super_administrador/conf_rango_act/inicio');
+    }
 }
