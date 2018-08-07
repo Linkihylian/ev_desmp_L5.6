@@ -8,4 +8,7 @@ class EvaluadorController extends Controller{
   public function index(){
     return view("evaluador.inicio");
   }
+  public function odi(){
+    return view("evaluador.odi");
+  }
 }

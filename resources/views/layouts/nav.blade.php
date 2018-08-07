@@ -41,7 +41,7 @@
           </a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link " href="#">Crear ODI </a>
+          <a class="nav-link " href="{{url("/evaluador/crear_odi")}}">Crear ODI </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Evaluar</a>

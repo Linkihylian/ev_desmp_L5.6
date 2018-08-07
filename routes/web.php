@@ -21,6 +21,7 @@ Route::get('/inicio', 'UserController@index');
 |
 */
 Route::get('/evaluador', 'EvaluadorController@index');
+Route::get('/evaluador/crear_odi', 'EvaluadorController@odi');
 
 /*
 |--------------------------------------------------------------------------
