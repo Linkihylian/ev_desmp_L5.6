@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         @php
-          $a = 1
+          $a = 2
         @endphp
 
         <li class="nav-item ">
@@ -39,9 +39,6 @@
           <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Evaluador
           </a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="">Manual</a>
         </li>
         <li class="nav-item ">
           <a class="nav-link " href="#">Crear ODI </a>
