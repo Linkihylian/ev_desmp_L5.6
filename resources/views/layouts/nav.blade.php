@@ -36,7 +36,7 @@
 
       @elseif($a == 2) <!--Evaluador -->
         <li class="nav-item dropdown active">
-          <a class="nav-link" href="#" aria-haspopup="true">
+          <a class="nav-link" href="{{url("/evaluador")}}" aria-haspopup="true">
             Evaluador
           </a>
         </li>
