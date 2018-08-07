@@ -23,7 +23,7 @@
             <div class="container mb-5 mt-2">
               <div class="row mb-4">
                 <div class="col-md-4 offset-md-4">
-                  <h2 align="center" style="color:#1960A4;">@yield('titulo')</h2>
+                  <h4 class="text-center mt-3" style="color:#1960A4;">@yield('titulo')</h2>
 
                 </div>
               </div>
