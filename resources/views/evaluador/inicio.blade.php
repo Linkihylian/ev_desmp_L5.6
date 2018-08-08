@@ -1,26 +1,22 @@
 @extends('layouts/layout')
 @extends('layouts/nav')
 @section ('title','Inicio')
-@section('titulo')
-  <strong>Evaluacion del Trabajador</strong>
-@endsection
 
 @section ('contenido')
   <div class="card">
     <div class="card-body">
         <div class="row">
           <div class="col-md-12">
-            <h4 class="text-center">
-               <strong> Datos del evaluador</strong>
-            </h4>
+            <h5 class="card-title text-center">
+                Datos del evaluador
+            </h5>
           </div>
         </div>
-        <br>
         <div class="row">
           <div class="col-md-12">
-            <div class="table-responsive">
-              <table class="table table-hover border border-secondary">
-                <thead class="text-white bg-secondary">
+            <div class="card table-responsive">
+              <table class="table table-hover">
+                <thead class="text-light bg-secondary">
                   <tr>
                     <th>Nombre y apellido</th>
                     <th>Cedula de identidad</th>
@@ -32,12 +28,12 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th>Sona</th>
-                    <th>Invocador</th>
-                    <th>League of Legend</th>
-                    <th>Bot</th>
-                    <th>Soporte</th>
-                    <th>2015</th>
+                    <td>Sona</td>
+                    <td>Invocador</td>
+                    <td>League of Legend</td>
+                    <td>Bot</td>
+                    <td>Soporte</td>
+                    <td>2015</td>
                   </tr>
                 </tbody>
               </table>
@@ -45,22 +41,21 @@
           </div>
 
         </div>
-        <br><br>
+
         <br><br>
         <div class="row">
           <div class="col-md-12">
-            <h4 class="text-center">
-               <strong>Personal de la oficina</strong>
-            </h4>
+            <h5 class="card-title text-center">
+               Personal de la oficina
+            </h5>
           </div>
         </div>
-        <br>
         <div class="row">
           <div class="col-md-6 offset-md-3">
             <div class="input-group">
-              <input type="text" class="form-control border border-secondary" placeholder="C.I" name="cedula" onkeypress="" minlength="7" maxlength="9" />
+              <input type="text" class="form-control border border-secondary" placeholder="Agregar personal C.I" name="cedula" onkeypress="" minlength="7" maxlength="9" />
               <span class="input-group-btn">
-                <button type="button" name="button" class="btn" onclick="">
+                <button type="button" name="button" class="btn" onclick="buscarPersonal()">
                   <span class="fa fa-search" aria-hidden="true">
                   </span>
                 </button>
@@ -72,9 +67,9 @@
         <br>
       <div class="row">
         <div class="col-md-12">
-          <div class="table-responsive">
-            <table class="table table-hover border border-info">
-              <thead class="text-white bg-info">
+          <div class="card table-responsive">
+            <table class="table table-hover">
+              <thead class="text-white bg-secondary">
                 <tr>
                   <th>Nombre y apellido</th>
                   <th>Cedula de identidad</th>
@@ -88,14 +83,34 @@
               </thead>
               <tbody>
                 <tr>
-                  <th>Sona</th>
-                  <th>Invocador</th>
-                  <th>League of Legend</th>
-                  <th>Bot</th>
-                  <th>Soporte</th>
-                  <th></th>
-                  <th>***</th>
-                  <th>activa</th>
+                  <td>Sona1</td>
+                  <td>Invocador</td>
+                  <td>League of Legend</td>
+                  <td>Bot</td>
+                  <td>Soporte</td>
+                  <td></td>
+                  <td>***</td>
+                  <td>activa</td>
+                </tr>
+                <tr>
+                  <td>Sona2</td>
+                  <td>Invocador</td>
+                  <td>League of Legend</td>
+                  <td>Bot</td>
+                  <td>Soporte</td>
+                  <td></td>
+                  <td>***</td>
+                  <td>activa</td>
+                </tr>
+                <tr>
+                  <td>Sona3</td>
+                  <td>Invocador</td>
+                  <td>League of Legend</td>
+                  <td>Bot</td>
+                  <td>Soporte</td>
+                  <td></td>
+                  <td>***</td>
+                  <td>activa</td>
                 </tr>
               </tbody>
             </table>
