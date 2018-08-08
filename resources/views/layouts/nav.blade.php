@@ -6,7 +6,6 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
-<<<<<<< HEAD
         @php
           $a = 2
         @endphp
@@ -17,12 +16,11 @@
 
         @if($a == 1) <!--Super Administrador-->
         <li class="nav-item dropdown active">
-=======
+
         <li class="nav-item " id="nav_super_administrador">
           <a class="nav-link" href="{{ url("/super_administrador/normas") }}">Normas </a>
         </li>
         <li class="nav-item dropdown " id="nav_evaluacion">
->>>>>>> ed475fb745429f2a23c1bd6a890f915205f38ac3
           <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Evaluación
           </a>
