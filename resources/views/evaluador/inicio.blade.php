@@ -46,10 +46,19 @@
 
         </div>
         <br><br>
+        <br><br>
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="text-center">
+               <strong>Personal de la oficina</strong>
+            </h4>
+          </div>
+        </div>
+        <br>
         <div class="row">
           <div class="col-md-6 offset-md-3">
             <div class="input-group">
-              <input type="text" class="form-control border border-secondary" name="cedula" onkeypress="" minlength="7" maxlength="9" />
+              <input type="text" class="form-control border border-secondary" placeholder="C.I" name="cedula" onkeypress="" minlength="7" maxlength="9" />
               <span class="input-group-btn">
                 <button type="button" name="button" class="btn" onclick="">
                   <span class="fa fa-search" aria-hidden="true">
@@ -58,14 +67,6 @@
               </span>
             </div>
 
-          </div>
-        </div>
-        <br><br>
-        <div class="row">
-          <div class="col-md-12">
-            <h4 class="text-center">
-               <strong>Personal de la oficina agregado</strong>
-            </h4>
           </div>
         </div>
         <br>
