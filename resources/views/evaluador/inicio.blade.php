@@ -45,7 +45,7 @@
           </div>
 
         </div>
-        <br><br>
+
         <br><br>
         <div class="row">
           <div class="col-md-12">
@@ -54,11 +54,10 @@
             </h4>
           </div>
         </div>
-        <br>
         <div class="row">
           <div class="col-md-6 offset-md-3">
             <div class="input-group">
-              <input type="text" class="form-control border border-secondary" placeholder="C.I" name="cedula" onkeypress="" minlength="7" maxlength="9" />
+              <input type="text" class="form-control border border-secondary" placeholder="Agregar personal C.I" name="cedula" onkeypress="" minlength="7" maxlength="9" />
               <span class="input-group-btn">
                 <button type="button" name="button" class="btn" onclick="">
                   <span class="fa fa-search" aria-hidden="true">
@@ -88,7 +87,27 @@
               </thead>
               <tbody>
                 <tr>
-                  <th>Sona</th>
+                  <th>Sona1</th>
+                  <th>Invocador</th>
+                  <th>League of Legend</th>
+                  <th>Bot</th>
+                  <th>Soporte</th>
+                  <th></th>
+                  <th>***</th>
+                  <th>activa</th>
+                </tr>
+                <tr>
+                  <th>Sona2</th>
+                  <th>Invocador</th>
+                  <th>League of Legend</th>
+                  <th>Bot</th>
+                  <th>Soporte</th>
+                  <th></th>
+                  <th>***</th>
+                  <th>activa</th>
+                </tr>
+                <tr>
+                  <th>Sona3</th>
                   <th>Invocador</th>
                   <th>League of Legend</th>
                   <th>Bot</th>
