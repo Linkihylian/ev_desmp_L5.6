@@ -59,7 +59,7 @@
             <div class="input-group">
               <input type="text" class="form-control border border-secondary" placeholder="Agregar personal C.I" name="cedula" onkeypress="" minlength="7" maxlength="9" />
               <span class="input-group-btn">
-                <button type="button" name="button" class="btn" onclick="">
+                <button type="button" name="button" class="btn" onclick="buscarPersonal()">
                   <span class="fa fa-search" aria-hidden="true">
                   </span>
                 </button>
