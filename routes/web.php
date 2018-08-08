@@ -17,10 +17,19 @@ Route::get('/', 'UserController@index');
 
 /*
 |--------------------------------------------------------------------------
+| Evaluado
+|--------------------------------------------------------------------------
+|
+*/
+Route::get ('/evaluado', 'EvaluadoController@index');
+Route::get ('/test', 'EvaluadoController@historial');
+Route::get ('/report', 'EvaluadoController@reporte');
+
+/*
+|--------------------------------------------------------------------------
 | Super administrador
 |--------------------------------------------------------------------------
 |
 */
-
-Route::get('/super_administrador', 'Super_administrador@index');
+Route::get ('/super_administrador', 'Super_administrador@index');
 Route::post('/super_administrador/guardar_periodo', 'Super_administrador@guardar_periodo');
