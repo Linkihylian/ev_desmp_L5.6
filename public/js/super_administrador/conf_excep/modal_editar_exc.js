@@ -14,7 +14,6 @@ function modal_editar_exc(id, excp){
   $("#modal_cuerpo").html(cuerpo)
 
   var pie = `
-    <button type="button" class="btn btn-info float-left">Historial</button>
     <button type="button" class="btn btn-primary">Guardar</button>
     <button type="button" class="btn btn-danger">Eliminar</button>
     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>

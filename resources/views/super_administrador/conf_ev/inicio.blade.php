@@ -444,6 +444,7 @@
 @endsection
 @section('js')
 
+<script src="{{ asset("js/menu.js") }}" charset="utf-8"></script>
 <script src="{{ asset("js/jquery-ui.min.js") }}" charset="utf-8"></script>
 <script src="{{ asset("js/datepicker-es.js") }}" charset="utf-8"></script>
 <script src="{{ asset("js/selectize.min.js") }}" charset="utf-8"></script>
