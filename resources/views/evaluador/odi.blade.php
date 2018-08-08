@@ -79,3 +79,6 @@
 
 
 @endsection
+@section('js')
+<script src="{{ asset("js/menu.js") }}" charset="utf-8"></script>
+@endsection

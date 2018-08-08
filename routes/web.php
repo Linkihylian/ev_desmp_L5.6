@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'LoginController@index');
-Route::get('/inicio', 'UserController@index');
+Route::get('/normas', 'UserController@index');
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +20,7 @@ Route::get('/inicio', 'UserController@index');
 |--------------------------------------------------------------------------
 |
 */
-Route::get('/evaluador', 'EvaluadorController@index');
+Route::get('/evaluador/inicio', 'EvaluadorController@index');
 Route::get('/evaluador/crear_odi', 'EvaluadorController@odi');
 
 /*

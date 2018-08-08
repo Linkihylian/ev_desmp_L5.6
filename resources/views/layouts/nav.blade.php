@@ -10,12 +10,12 @@
           $a = 2
         @endphp
 
-        <li class="nav-item ">
-          <a class="nav-link" href="{{ url("/inicio") }}">Normas</a>
+        <li class="nav-item " id="normas">
+          <a class="nav-link" href="{{ url("/normas") }}">Normas</a>
         </li>
 
         @if($a == 1) <!--Super Administrador-->
-        <li class="nav-item dropdown active">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Evaluación
           </a>
@@ -35,18 +35,15 @@
         </li>
 
       @elseif($a == 2) <!--Evaluador -->
-        <li class="nav-item dropdown active">
-          <a class="nav-link" href="{{url("/evaluador")}}" aria-haspopup="true">
-            Evaluador
+        <li class="nav-item" id="nav_evaluar">
+          <a class="nav-link" href="{{url("/evaluador/inicio")}}">
+            Evaluar
           </a>
         </li>
-        <li class="nav-item ">
+        <li class="nav-item " id="nav_crear_odi">
           <a class="nav-link " href="{{url("/evaluador/crear_odi")}}">Crear ODI </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Evaluar</a>
-        </li>
-        <li class="nav-item">
+        <li class="nav-item" id="">
           <a class="nav-link" href="#">Auditoria</a>
         </li>
       @endif
