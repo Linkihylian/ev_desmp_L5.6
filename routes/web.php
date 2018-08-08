@@ -36,6 +36,10 @@ Route::get ('/super_administrador/evaluacion/configurar_rango_actuacion', 'Super
 Route::get ('/super_administrador/evaluacion/configurar_excepcional', 'Super_administrador@configurar_excepcional');
 Route::get ('/super_administrador/evaluacion/configurar_evaluacion', 'Super_administrador@conf_ev');
 Route::get ('/super_administrador/evaluaciones_realizadas', 'Super_administrador@evaluaciones_realizadas');
+Route::get ('/super_administrador/reportes/inicio', 'Super_administrador@reportes');
+Route::get ('/super_administrador/reportes/dir_of', 'Super_administrador@reportes_dir_of');
+Route::get ('/super_administrador/reportes/personal', 'Super_administrador@reportes_personal');
+Route::get ('/super_administrador/auditoria/odi', 'Super_administrador@auditoria_odi');
 
 
 /*
