@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         @php
-          $a = 2
+          $a = 1
         @endphp
 
         <li class="nav-item ">
