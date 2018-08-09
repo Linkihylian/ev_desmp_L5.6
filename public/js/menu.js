@@ -24,4 +24,12 @@ $(function(){
   if ( pat.test(url) ) {
     $("#nav_crear_odi").addClass("active");
   }
+  var pat = /auditoria/;
+  if ( pat.test(url) ) {
+    $("#nav_auditoria").addClass("active");
+  }
+  var pat = /odis_rechazadas/;
+  if ( pat.test(url) ) {
+    $("#nav_recha_odi").addClass("active");
+  }
 })

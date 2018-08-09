@@ -9,6 +9,12 @@ class EvaluadorController extends Controller{
     return view("evaluador.inicio");
   }
   public function odi(){
-    return view("evaluador.odi");
+    return view("evaluador.odi.inicio");
+  }
+  public function auditoria(){
+    return view("evaluador.odi.auditoria.historial");
+  }
+  public function rechazadas(){
+    return view("evaluador.odi.rechazadas");
   }
 }

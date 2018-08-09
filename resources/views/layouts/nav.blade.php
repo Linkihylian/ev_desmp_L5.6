@@ -36,15 +36,16 @@
 
       @elseif($a == 2) <!--Evaluador -->
         <li class="nav-item" id="nav_evaluar">
-          <a class="nav-link" href="{{url("/evaluador/evaluar")}}">
-            Evaluar
-          </a>
+          <a class="nav-link" href="{{url("/evaluador/evaluar")}}">Evaluar</a>
         </li>
         <li class="nav-item " id="nav_crear_odi">
           <a class="nav-link " href="{{url("/evaluador/crear_odi")}}">Crear ODI </a>
         </li>
-        <li class="nav-item" id="">
-          <a class="nav-link" href="#">Auditoria</a>
+        <li class="nav-item" id="nav_recha_odi">
+          <a class="nav-link" href="/evaluador/odis_rechazadas">ODI Rechazadas</a>
+        </li>
+        <li class="nav-item" id="nav_auditoria">
+          <a class="nav-link" href="/evaluador/auditoria">Auditoria</a>
         </li>
       @endif
       </ul>

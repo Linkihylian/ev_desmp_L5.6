@@ -22,6 +22,8 @@ Route::get('/normas', 'UserController@index');
 */
 Route::get('/evaluador/evaluar', 'EvaluadorController@index');
 Route::get('/evaluador/crear_odi', 'EvaluadorController@odi');
+Route::get('/evaluador/auditoria', 'EvaluadorController@auditoria');
+Route::get('/evaluador/odis_rechazadas', 'EvaluadorController@rechazadas');
 
 /*
 |--------------------------------------------------------------------------
