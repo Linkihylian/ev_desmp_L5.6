@@ -1,6 +1,6 @@
 @extends('layouts/layout')
 @extends('layouts/nav')
-@section('title','Evaluaciones realizadas')
+@section('title','Crear ODI')
 
 @section('contenido')
 
@@ -50,13 +50,8 @@
       <div class="col-sm-12 pt-5 text-center">
         <i class="fas fa-angle-double-down"></i>
       </div>
-
-
     </div>
-
-
-
-
+<br>
     <div class="card table-responsive">
       <table class="table table-hover" id="obj_desemp_indiv">
         <thead class="bg-secondary text-white">
