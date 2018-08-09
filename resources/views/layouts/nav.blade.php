@@ -36,7 +36,7 @@
 
       @elseif($a == 2) <!--Evaluador -->
         <li class="nav-item" id="nav_evaluar">
-          <a class="nav-link" href="{{url("/evaluador/inicio")}}">
+          <a class="nav-link" href="{{url("/evaluador/evaluar")}}">
             Evaluar
           </a>
         </li>

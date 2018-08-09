@@ -20,7 +20,7 @@ Route::get('/normas', 'UserController@index');
 |--------------------------------------------------------------------------
 |
 */
-Route::get('/evaluador/inicio', 'EvaluadorController@index');
+Route::get('/evaluador/evaluar', 'EvaluadorController@index');
 Route::get('/evaluador/crear_odi', 'EvaluadorController@odi');
 
 /*

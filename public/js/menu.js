@@ -16,7 +16,7 @@ $(function(){
   if ( pat.test(url) ) {
     $("#nav_ev_realizadas").addClass("active");
   }
-  var pat = /inicio/;
+  var pat = /evaluar/;
   if ( pat.test(url) ) {
     $("#nav_evaluar").addClass("active");
   }
