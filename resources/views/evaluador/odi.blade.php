@@ -28,7 +28,7 @@
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">2. Coordinación</h5>
-            <select class="form-control" name="coordinacion">
+            <select class="form-control" name="" id="coordinacion">
               <option value="1">1</option>
             </select>
           </div>
@@ -39,7 +39,7 @@
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">3. Cargos</h5>
-            <select class="form-control" name="cargos">
+            <select class="form-control" name="" id="cargos">
               <option value="1">1</option>
             </select>
           </div>
@@ -58,7 +58,7 @@
 
 
     <div class="card table-responsive">
-      <table class="table table-hover" id="tabla_ev_realizadas">
+      <table class="table table-hover" id="obj_desemp_indiv">
         <thead class="bg-secondary text-white">
           <tr>
             <th >Objetivo De Desempeño Individual</th>
