@@ -8,7 +8,7 @@
 <div class="card">
   <div class="card-body">
     <h5 class="text-center card-title"> ODI Rechazadas</h5>
-    <div class="row">
+    
       <div class="card table-responsive">
         <table class="table table-hover" id="obj_desemp_indiv">
           <thead class="bg-secondary text-white">
@@ -36,7 +36,6 @@
         </table>
       </div>
 
-      </div>
 
   </div>
 </div>
