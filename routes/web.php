@@ -11,9 +11,10 @@
 |
 */
 
+/* Probando AUTH*/
 Route::get('/', 'LoginController@index');
-Route::get('/normas', 'UserController@index');
 
+Route::get('/normas', 'UserController@index');
 /*
 |--------------------------------------------------------------------------
 | Evaluador
