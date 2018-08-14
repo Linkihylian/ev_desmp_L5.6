@@ -11,17 +11,26 @@
 |
 */
 
-Route::get('/', 'LoginController@index');
-Route::get('/inicio', 'UserController@index');
+/* Probando AUTH*/
+Route::get('/login', 'LoginController@index');
 
+Route::post('/login', 'LoginController@login');
+
+/* Probando AUTH*/
+
+
+
+Route::get('/normas', 'UserController@index');
 /*
 |--------------------------------------------------------------------------
 | Evaluador
 |--------------------------------------------------------------------------
 |
 */
-Route::get('/evaluador', 'EvaluadorController@index');
+Route::get('/evaluador/evaluar', 'EvaluadorController@index');
 Route::get('/evaluador/crear_odi', 'EvaluadorController@odi');
+Route::get('/evaluador/auditoria', 'EvaluadorController@auditoria');
+Route::get('/evaluador/odis_rechazadas', 'EvaluadorController@rechazadas');
 
 /*
 |--------------------------------------------------------------------------
