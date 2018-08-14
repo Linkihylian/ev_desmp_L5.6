@@ -12,9 +12,7 @@ class EvaluadoController extends Controller{
     public function historial(){
         return view('/evaluado/historial');
     }
-    public function reporte(){
-        return view('/evaluado/reporte');
-    }
+  
 
 
 }

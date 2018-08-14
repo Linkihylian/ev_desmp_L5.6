@@ -19,7 +19,7 @@
         <div class="rounded-top" style="background:url({{asset('assets/images/fondo_blanco.png')}})">
           <img width="100%" data-holder-rendered="true" class="img-responsive mt-3 mb-3" src="{{asset('assets/images/cabecera3.png')}}" alt="Imagen banner1">
         <!--  @yield('nav','navi')
--->       @yield('navi')
+-->       @yield('navs')
           <div class="panel panel-default">
             <div class="container mb-5 mt-2">
               <div class="row mb-4">

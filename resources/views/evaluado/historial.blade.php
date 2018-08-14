@@ -13,12 +13,15 @@
 
 <div class="card">
   <div class="card-body">
-    <h5 class="card-title text-center">  Historial Evaluador</h5>
+    <ul class="list-group" style="    background-color: #f8f9fa;">
+      <li class="list-group-item">  <h5 class="card-title text-center"> Historial Evaluador</h5></li>
+    </ul>
+    <br>
       <div class="col-sm-12 pt-2 table-responsive">
         <div class="card">
 
-          <table class="table table-hover">
-            <thead class="thead-light">
+            <table class="table table-hover table-bodered" >
+            <thead class="bg-secondary text-white ">
 
               <tr>
                 <th scope="col">#</th>

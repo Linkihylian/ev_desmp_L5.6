@@ -59,8 +59,39 @@
         <li class="nav-item ">
           <a class="nav-link " href="{{url("/test")}}"  aria-haspopup="true" aria-expanded="false">Historial</a>
         </li>
-        
 
+
+
+      </ul>
+    </div>
+  </nav>
+</header>
+@endsection
+@section('navs')
+<header>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" >Normas </a>
+        </li>
+
+        <li class="nav-item ">
+          <a class="nav-link  " href="{{url("/supervisor-evaluador")}}" id="#" role="button"  aria-haspopup="true" aria-expanded="false">
+            Evaluación
+          </a>
+
+        </li>
+
+        <li class="nav-item ">
+          <a class="nav-link " href="{{url("/aprobar")}}"  aria-haspopup="true" aria-expanded="false">Aprobar ODI</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="{{url("/audi")}}"  aria-haspopup="true" aria-expanded="false">Auditoria</a>
+        </li>
 
       </ul>
     </div>

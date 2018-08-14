@@ -27,6 +27,15 @@ Route::get ('/report', 'EvaluadoController@reporte');
 
 /*
 |--------------------------------------------------------------------------
+| Supervisor Evaluador
+|--------------------------------------------------------------------------
+|
+*/
+Route::get ('/supervisor-evaluador', 'SupervisorEvaluador@index');
+Route::get ('/aprobar', 'SupervisorEvaluador@aprobarOdi');
+Route::get ('/audi', 'SupervisorEvaluador@auditoria');
+/*
+|--------------------------------------------------------------------------
 | Super administrador
 |--------------------------------------------------------------------------
 |
