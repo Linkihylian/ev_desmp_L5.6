@@ -1,29 +1,14 @@
 function modal_agregar_rang_act(){
   $("#modal_titulo").html("Agregar Rangos de Actuación para el personal Administrativo, Técnico - Profesional y Supervisorio")
-  var cuerpo = `
-    <div class="row">
-      <div class="col-sm-6 form-group">
-        <label>Inicio</label>
-        <input type="number" class="form-control" id="modal_input_r_inicio">
-      </div>
-      <div class="col-sm-6 form-group">
-        <label>Final</label>
-        <input type="number" class="form-control" id="modal_input_r_final">
-      </div>
-      <div class="col-sm-12 form-group">
-        <label>Rango de actuación</label>
-        <textarea rows="3" class="form-control"></textarea>
-      </div>
-      <div class="col-sm-12 form-group">
-        <label>Descripción</label>
-        <textarea rows="3" class="form-control"></textarea>
-      </div>
-    </div>
-  `;
-  $("#modal_cuerpo").html(cuerpo)
+
+  $("#modal_input_id_ra").val(null);
+  $("#modal_input_r_inicio").val(null);
+  $("#modal_input_r_final").val(null);
+  $("#modal_textarea_ra").val(null);
+  $("#modal_textarea_descripcion").val(null);
 
   var pie = `
-    <button type="button" class="btn btn-primary">Guardar</button>
+    <button type="button" class="btn btn-primary" onclick="ra_guardar_emp()">Guardar</button>
     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
   `;
   $("#modal_pie").html(pie)
