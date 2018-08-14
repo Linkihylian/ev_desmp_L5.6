@@ -34,4 +34,24 @@ class super_administrador extends Controller{
 
       return view('/super_administrador/ev_realizadas/inicio');
     }
+
+    public function reportes(){
+
+      return view('/super_administrador/reportes/inicio');
+    }
+
+    public function reportes_dir_of(){
+
+      return view('/super_administrador/reportes/dir_of');
+    }
+
+    public function reportes_personal(){
+
+      return view('/super_administrador/reportes/personal');
+    }
+
+    public function auditoria_odi(){
+
+      return view('/super_administrador/auditoria/odi');
+    }
 }

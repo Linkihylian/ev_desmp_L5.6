@@ -1,17 +1,11 @@
 function modal_agregar_exc(){
   $("#modal_titulo").html("Agregar Exposición de asignación del rango excepcional")
-  var cuerpo = `
-    <div class="row">
-      <div class="col-sm-12">
-        <label>Exposición de asignación del rango excepcional</label>
-        <input type="text" class="form-control" id="modal_input_odi">
-      </div>
-    </div>
-  `;
-  $("#modal_cuerpo").html(cuerpo)
+
+  $("#modal_input_excepcional").val(null)
+  $("#modal_input_id_excp").val(null)
 
   var pie = `
-    <button type="button" class="btn btn-primary">Guardar</button>
+    <button type="button" class="btn btn-primary" onclick="guardar()">Guardar</button>
     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
   `;
   $("#modal_pie").html(pie)
