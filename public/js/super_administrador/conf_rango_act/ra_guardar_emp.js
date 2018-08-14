@@ -10,7 +10,7 @@ function ra_guardar_emp(){
       modal_textarea_ra: $("#modal_textarea_ra").val(),
       modal_textarea_descripcion: $("#modal_textarea_descripcion").val(),
       modal_textarea_descripcion: $("#modal_textarea_descripcion").val(),
-      tipo: 0
+      tipo: $("[name='opcion']:checked").val()
     },
     success: function(data){
       swal.close();

@@ -21,9 +21,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr data-id-excp="111">
-            <td colspan="2">1</td>
-          </tr>
+
 
         </tbody>
       </table>
@@ -44,7 +42,13 @@
         </button>
       </div>
       <div class="modal-body" id="modal_cuerpo">
-        ...
+        <div class="row">
+          <div class="col-sm-12">
+            <label>Exposición de asignación del rango excepcional</label>
+            <input type="text" class="form-control" id="modal_input_excepcional">
+            <input type="hidden" name="" value="" id="modal_input_id_excp">
+          </div>
+        </div>
       </div>
       <div class="modal-footer" id="modal_pie">
 
@@ -59,6 +63,11 @@
 <script src="{{ asset("js/super_administrador/conf_excep/inicio.js") }}" charset="utf-8"></script>
 <script src="{{ asset("js/super_administrador/conf_excep/modal_agregar_exc.js") }}" charset="utf-8"></script>
 <script src="{{ asset("js/super_administrador/conf_excep/modal_editar_exc.js") }}" charset="utf-8"></script>
+
+<script src="{{ asset("js/super_administrador/conf_excep/propiedades_tabla.js") }}" charset="utf-8"></script>
+<script src="{{ asset("js/super_administrador/conf_excep/actualizar_tabla.js") }}" charset="utf-8"></script>
+<script src="{{ asset("js/super_administrador/conf_excep/guardar.js") }}" charset="utf-8"></script>
+
 <script type="text/javascript">
 
 

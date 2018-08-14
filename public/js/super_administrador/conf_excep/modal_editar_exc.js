@@ -1,21 +1,13 @@
 function modal_editar_exc(id, excp){
   $("#modal_titulo").html("Editar Exposición de asignación del rango excepcional")
 
-  var cuerpo = `
-    <div class="row">
-      <div class="col-sm-12">
-        <label>Exposición de asignación del rango excepcional</label>
-        <input type="text" class="form-control" id="modal_input_excp" value=`+excp+`>
-        <input type="hidden" class="form-control" id="modal_input_excp_id" value=`+id+`>
 
-      </div>
-    </div>
-  `;
-  $("#modal_cuerpo").html(cuerpo)
+  $("#modal_input_excepcional").val(excp)
+  $("#modal_input_id_excp").val(id)
 
   var pie = `
-    <button type="button" class="btn btn-primary">Guardar</button>
-    <button type="button" class="btn btn-danger">Eliminar</button>
+    <button type="button" class="btn btn-primary" onclick="modificar(0)">Modificar</button>
+    <button type="button" class="btn btn-danger" onclick="modificar(1)">Eliminar</button>
     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
   `;
   $("#modal_pie").html(pie)

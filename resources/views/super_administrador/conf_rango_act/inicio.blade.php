@@ -11,91 +11,37 @@
 <div class="card">
   <div class="card-body">
 
+    <h5 class="card-title text-center pt-5" >Rangos de Actuación</h5>
 
-    <ul class="nav nav-pills" id="myTab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">1. Empleado <i class="fas fa-angle-right"></i> </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">2. Obrero <i class="fas fa-angle-right"></i> </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="final-tab" data-toggle="tab" href="#final" role="tab" aria-controls="profile" aria-selected="false">3. Final </a>
-      </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-
-        <h5 class="card-title text-center pt-5" >Rangos de Actuación para el personal Administrativo, Técnico - Profesional y Supervisorio</h5>
-
-        <div class="table-responsive card mt-5">
-          <table class="table table-hover" id="tabla_ra_empleado">
-            <thead class="bg-secondary text-light">
-              <tr>
-                <th scope="col">Inicio</th>
-                <th scope="col">Final</th>
-                <th scope="col">Rango de actuación</th>
-                <th scope="col">Descripción</th>
-                <th scope="col" style="width: 20px"><button type="button" name="button" class="btn btn-primary btn-block" onclick="modal_agregar_rang_act()"><i class="fas fa-plus"></i></button></th>
-              </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-          </table>
+    <div class="row">
+      <div class="col-md-2 offset-md-5 mt-5">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active" >
+            <input type="radio" name="opcion" id="option1" autocomplete="off" value="0" checked onchange="ra_actualizar_tabla_emp()"> Empleado
+          </label>
+          <label class="btn btn-secondary" >
+            <input type="radio" name="opcion" id="option2" autocomplete="off" value="1" onchange="ra_actualizar_tabla_emp()" > Obrero
+          </label>
         </div>
-
-        <div class="col-md-8 offset-md-2 col-sm-12 pt-5">
-          <button type="button" onclick="" class="btn btn-primary btn-block" id="listo_categoria">Listo</button>
-        </div>
-
 
       </div>
-      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    </div>
 
-        <h5 class="card-title text-center pt-5" >Rango de Actuación del personal obrero</h5>
+    <div class="table-responsive card mt-5">
+      <table class="table table-hover" id="tabla_ra_empleado">
+        <thead class="bg-secondary text-light">
+          <tr>
+            <th scope="col">Inicio</th>
+            <th scope="col">Final</th>
+            <th scope="col">Rango de actuación</th>
+            <th scope="col">Descripción</th>
+            <th scope="col" style="width: 20px"><button type="button" name="button" class="btn btn-primary btn-block" onclick="modal_agregar_rang_act()"><i class="fas fa-plus"></i></button></th>
+          </tr>
+        </thead>
+        <tbody>
 
-        <div class="table-responsive card mt-5">
-          <table class="table table-hover" id="tabla_ra_obrero">
-            <thead class="bg-secondary text-light">
-              <tr>
-                <th scope="col">Inicio</th>
-                <th scope="col">Final</th>
-                <th scope="col">Rango de actuación</th>
-                <th scope="col">Descripción</th>
-                <th scope="col" style="width: 20px"><button type="button" name="button" class="btn btn-primary btn-block" onclick="modal_agregar_rang_act_obrero()"><i class="fas fa-plus"></i></button></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr data-id-excp="111">
-                <td>1</td>
-                <td>7</td>
-                <td>Ra obrero</td>
-                <td colspan="2"> dewsc obrero </td>
-              </tr>
-
-            </tbody>
-          </table>
-        </div>
-
-
-
-      </div>
-      <div class="tab-pane fade" id="final" role="tabpanel" aria-labelledby="final-tab">
-        <div class="row mt-5">
-          <div class="col-sm-4 offset-sm-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Final</h5>
-                <p>Para continuar debe crear la Exposición de asignación del rango excepcional </p>
-                <div class="col-md-8 offset-md-2 col-sm-12 pt-5">
-                  <a href="#" class="btn btn-primary btn-block">Continuar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        </tbody>
+      </table>
     </div>
 
 
@@ -149,7 +95,7 @@
 <script src="{{ asset("js/super_administrador/conf_rango_act/inicio.js") }}" charset="utf-8"></script>
 <script src="{{ asset("js/super_administrador/conf_rango_act/modal_agregar_rang_act.js") }}" charset="utf-8"></script>
 <script src="{{ asset("js/super_administrador/conf_rango_act/modal_editar_rang_act.js") }}" charset="utf-8"></script>
-<script src="{{ asset("js/super_administrador/conf_rango_act/modal_agregar_rang_act_obrero.js") }}" charset="utf-8"></script>
+
 
 <script src="{{ asset("js/super_administrador/conf_rango_act/propiedades_tabla_emp.js") }}" charset="utf-8"></script>
 <script src="{{ asset("js/super_administrador/conf_rango_act/ra_actualizar_tabla_emp.js") }}" charset="utf-8"></script>

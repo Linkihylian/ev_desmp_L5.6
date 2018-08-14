@@ -33,12 +33,16 @@ Route::get('/evaluador/crear_odi', 'EvaluadorController@odi');
 Route::get ('/super_administrador/normas', 'Super_administrador@index');
 Route::post('/super_administrador/guardar_periodo', 'Super_administrador@guardar_periodo');
 
-Route::get ('/super_administrador/evaluacion/configurar_rango_actuacion', 'Super_administrador@configurar_rango_actuacion');
+Route::get  ('/super_administrador/evaluacion/configurar_rango_actuacion', 'Super_administrador@configurar_rango_actuacion');
 Route::post ('/super_administrador/evaluacion/configurar_rango_actuacion/consultar_todo/{id}', 'Rango_actuacion@consultar_todo');
 Route::post ('/super_administrador/evaluacion/configurar_rango_actuacion/guardar', 'Rango_actuacion@guardar');
 Route::post ('/super_administrador/evaluacion/configurar_rango_actuacion/modificar', 'Rango_actuacion@modificar');
 
-Route::get ('/super_administrador/evaluacion/configurar_excepcional', 'Super_administrador@configurar_excepcional');
+Route::get  ('/super_administrador/evaluacion/configurar_excepcional', 'Super_administrador@configurar_excepcional');
+Route::post ('/super_administrador/evaluacion/configurar_excepcional/consultar', 'Excepcional@consultar_todo');
+Route::post ('/super_administrador/evaluacion/configurar_excepcional/guardar', 'Excepcional@guardar');
+
+
 Route::get ('/super_administrador/evaluacion/configurar_evaluacion', 'Super_administrador@conf_ev');
 Route::get ('/super_administrador/evaluaciones_realizadas', 'Super_administrador@evaluaciones_realizadas');
 Route::get ('/super_administrador/reportes/inicio', 'Super_administrador@reportes');
