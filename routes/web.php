@@ -13,7 +13,8 @@
 
 /* Probando AUTH*/
 Route::get('/login', 'LoginController@index');
-Route::post('/login', 'LoginController@loginPost');
+
+Route::post('/login', 'UsuarioController@test');
 
 /* Probando AUTH*/
 
