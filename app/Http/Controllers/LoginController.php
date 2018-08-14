@@ -10,4 +10,9 @@ class LoginController extends Controller{
   public function index(){
     return view('login.inicio');
   }
+  public function loginPost(Request $request){
+    echo $request->input('usuario');
+    echo $request->input('clave');
+
+  }
 }
