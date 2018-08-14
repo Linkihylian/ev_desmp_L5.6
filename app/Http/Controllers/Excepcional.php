@@ -6,14 +6,13 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 
-class Rango_actuacion extends Controller{
+class Excepcional extends Controller{
 
-  public function consultar_todo($id){
+  public function consultar_todo(){
 
     try {
-      $resultado = DB::table("rang_actuacion")
+      $resultado = DB::table("exp_asig_excepcional")
       ->where("estado", "=", 0)
-      ->where("tipo", "=", $id)
       ->get();
 
       echo json_encode($resultado);
@@ -26,14 +25,10 @@ class Rango_actuacion extends Controller{
 
   public function guardar(Request $request){
     try {
-      DB::table("rang_actuacion")
+      DB::table("exp_asig_excepcional")
       ->insert([
-        "inicio"          => $request->input("modal_input_r_inicio"),
-        "final"           => $request->input("modal_input_r_final"),
-        "descripcion"     => $request->input("modal_textarea_descripcion"),
-        "estado"          => 0,
-        "tipo"            => $request->input("tipo"),
-        "rango_actuacion" => $request->input("modal_textarea_ra")
+        "exposicion"  => $request->input("modal_input_excepcional"),
+        "estado"      => 0
       ]);
       echo 0;
     } catch (\Exception $e) {

@@ -1,18 +1,11 @@
-function ra_modificar_emp(accion){
+function guardar(){
   swal.showLoading();
   $.ajax({
     type: "POST",
-    url: base_url+"/super_administrador/evaluacion/configurar_rango_actuacion/modificar",
+    url: base_url+"/super_administrador/evaluacion/configurar_excepcional/guardar",
     data:  {
       _token: $("[name='csrf-token']").attr('content'),
-      modal_input_id_ra: $("#modal_input_id_ra").val(),
-      modal_input_r_inicio: $("#modal_input_r_inicio").val(),
-      modal_input_r_final: $("#modal_input_r_final").val(),
-      modal_textarea_ra: $("#modal_textarea_ra").val(),
-      modal_textarea_descripcion: $("#modal_textarea_descripcion").val(),
-      modal_textarea_descripcion: $("#modal_textarea_descripcion").val(),
-      tipo: $("[name='opcion']:checked").val(),
-      estado: accion
+      modal_input_excepcional: $("#modal_input_excepcional").val(),
     },
     success: function(data){
       swal.close();
@@ -39,7 +32,8 @@ function ra_modificar_emp(accion){
         })
       }
 
-      ra_actualizar_tabla_emp();
+
+      actualizar_tabla();
 
     },
     error: function (xhr, ajaxOptions, thrownError) {

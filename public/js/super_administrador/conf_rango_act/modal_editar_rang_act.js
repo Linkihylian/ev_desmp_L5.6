@@ -10,7 +10,8 @@ function modal_editar_rang_act(id, inicio, final, ra, desc){
 
 
   var pie = `
-    <button type="button" class="btn btn-primary" onclick="ra_modificar_emp()">Guardar</button>
+    <button type="button" class="btn btn-primary" onclick="ra_modificar_emp(0)">Guardar</button>
+    <button type="button" class="btn btn-danger" onclick="ra_modificar_emp(1)">Eliminar</button>
     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
   `;
   $("#modal_pie").html(pie)
